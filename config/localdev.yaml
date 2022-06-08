@@ -1,0 +1,21 @@
+NODE_ENV: LOCAL
+LOG_LEVEL: DEBUG
+SERVICE_NAME: "Template Service"
+DB_NAME: TEMPLATE_SERVICE
+SERVICE_PORT: 8080
+API_VERSION: v2
+
+PROVIDER: ws://
+PROVIDER_PORT: 9944
+
+RABBIT:
+  host: localhost
+  port: 5672
+TEMPLATE_EXCHANGE: 'template.service.out.others.in'
+
+MONGO:
+  host: localhost
+  port: 27017
+  username: no-user
+  password: no-password
+  database: TEMPLATE_SERVICE
